@@ -1,17 +1,13 @@
-Example blog application using event sourcing, memory image, and Play! 2.1 with Scala
-=====================================================================================
+This is an older, unfinished 2013 project that explores an event-sourced architecture as articulated by [Martin Fowler](http://martinfowler.com/eaaDev/EventSourcing.html), implemented in Play Framework in Scala and Redis.
 
+Future plans include: 
+
+(1) improving the UX
+
+(2) implementing a system of composable modular components based on Facebook's BigPipe as explained by [Yevginiy Brikman](https://www.youtube.com/watch?v=4b1XLka0UIw), particularly something that hooks into my pinboard API
+
+(3) adding functionality for granular privacy controls for who can see blog posts and comments
+
+
+Forked from Eric Zilverline's example blog application using event sourcing, memory image, and Play! 2.1 with Scala
 See http://blog.zilverline.com/2012/07/04/simple-event-sourcing-introduction-part-1/
-for the accompanying blog series.
-
-To run the application install play-2.1-RC1 (or later) and run "play".
-
-Or install sbt 0.11.3 (or later) and run "sbt".
-
-To start the server with the Redis (http://redis.io) event store implementation you
-will need to have a Redis instance running. Redis 2.6 or higher is required. You can
-change the connection settings in conf/application.conf.
-
-Now you can execute "play run" (or "sbt run") to start the server. First time the
-internet is downloaded, but after a while you should be able to browse to
-http://localhost:9000/
